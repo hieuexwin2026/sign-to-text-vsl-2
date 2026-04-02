@@ -1,24 +1,36 @@
-VIDEO: D0007.mp4
-  TRUE : Do Thái
-  PRED : Albania (nước Albania)
-  CONF : 0.9619
-  TOP5: Albania (nước Albania), Do Thái, không cần, tỉnh, phương Tây
+VIDEO: D0006.mp4
+  TRUE : Ma Cao_1 -> Ý nghĩa: Ma Cao
+  PRED : ghen tị_3 -> Ý nghĩa: ghen tị
+  CONF : 0.9885
+  TOP5: ghen tị_3, thèm_1, ghen tị_2, Ả Rập (nước Ả Rập)_1, thói quen_2
 ----------------------------------------
-VIDEO: D0029B.mp4
-  TRUE : thói quen
-  PRED : ghen tị
-  CONF : 0.7579
-  TOP5: ghen tị, thói quen, Ả Rập (nước Ả Rập), hói đầu, không cần
+VIDEO: D0008.mp4
+  TRUE : Ả Rập (nước Ả Rập)_1 -> Ý nghĩa: Ả Rập (nước Ả Rập)
+  PRED : thèm_1 -> Ý nghĩa: thèm
+  CONF : 0.4884
+  TOP5: thèm_1, Ả Rập (nước Ả Rập)_1, phương Tây_1, ghen tị_3, ngày của Mẹ_3
 ----------------------------------------
-VIDEO: D0049N.mp4
-  TRUE : ngày Phụ nữ Việt Nam 20/10
-  PRED : ngày Người khuyết tật Việt Nam 18/4
-  CONF : 0.7227
-  TOP5: ngày Người khuyết tật Việt Nam 18/4, ngày Phụ nữ Việt Nam 20/10, ngày Người khuyết tật Thế giới 3/12, ngày Quốc tế phụ nữ 8/3, ngày giải phóng thủ đô 10/10
+VIDEO: D0009.mp4
+  TRUE : phương Tây_1 -> Ý nghĩa: phương Tây
+  PRED : mù chữ_1 -> Ý nghĩa: mù chữ
+  CONF : 1.0000
+  TOP5: mù chữ_1, tự giác_1, người nước ngoài_1, hấp dẫn_1, phương Tây_1
 ----------------------------------------
-VIDEO: D0055N.mp4
-  TRUE : ngày của Cha
-  PRED : ngày của Mẹ
-  CONF : 0.8163
-  TOP5: ngày của Mẹ, ngày của Cha, Do Thái, nổi da gà, ngày gia đình Việt Nam 28/6
+VIDEO: D0021.mp4
+  TRUE : hói đầu_1 -> Ý nghĩa: hói đầu
+  PRED : mù chữ_1 -> Ý nghĩa: mù chữ
+  CONF : 0.8835
+  TOP5: mù chữ_1, thèm_1, hấp dẫn_1, phương Tây_1, không cho_1
+----------------------------------------
+VIDEO: D0022.mp4
+  TRUE : cười nhếch mép_1 -> Ý nghĩa: cười nhếch mép
+  PRED : Miến Điện (nước Mi-an-ma)_3 -> Ý nghĩa: Miến Điện (nước Mi-an-ma)
+  CONF : 0.4429
+  TOP5: Miến Điện (nước Mi-an-ma)_3, không cho_3, Miến Điện (nước Mi-an-ma)_2, ngày Quốc tế phụ nữ 8/3_3, tuần lễ người Điếc thế giới_2
+----------------------------------------
+VIDEO: D0029T.mp4
+  TRUE : thói quen_3 -> Ý nghĩa: thói quen
+  PRED : ghen tị_2 -> Ý nghĩa: ghen tị
+  CONF : 0.5006
+  TOP5: ghen tị_2, thói quen_3, ghen tị_1, ngày của Mẹ_1, thói quen_2
 ----------------------------------------

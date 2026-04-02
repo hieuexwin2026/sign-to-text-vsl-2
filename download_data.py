@@ -18,7 +18,7 @@ import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 BASE_URL = "https://qipedc.moet.gov.vn"
-chrome_driver_url = "https://storage.googleapis.com/chrome-for-testing-public/144.0.7559.96/win64/chromedriver-win64.zip"
+chrome_driver_url = "https://storage.googleapis.com/chrome-for-testing-public/146.0.7488.0/win64/chromedriver-win64.zip"
 chrome_driver_path = "chromedriver-win64/chromedriver.exe"
 videos_dir = "Dataset/Videos"
 text_dir = "Dataset/Text"
@@ -239,8 +239,20 @@ def crawl_videos():
 def main():    
     download_chrome_driver()
     videos = crawl_videos()
+    
+    # --- ĐOẠN CODE MỚI THÊM ĐỂ TẠO SUB-CLASS (_1, _2) ---
     if videos:
         print(f"Found {len(videos)} videos\n")
+        
+        # Tạo một từ điển để đếm số lần xuất hiện của mỗi từ
+        label_counter = {}
+        for v in videos:
+            base_label = v['label']
+            # Đếm lên 1 mỗi lần gặp lại từ đó
+            label_counter[base_label] = label_counter.get(base_label, 0) + 1
+            # Cập nhật lại nhãn (ví dụ: "Giáo viên" thành "Giáo viên_1")
+            v['label'] = f"{base_label}_{label_counter[base_label]}"
+    # ----------------------------------------------------
     
     print("STARTING DOWNLOAD VIDEOS")
     csv_init()
@@ -255,4 +267,4 @@ def main():
     print(f"DOWNLOAD COMPLETED {videos_dir}")
 
 if __name__ == "__main__":
-    main() 
+    main()
